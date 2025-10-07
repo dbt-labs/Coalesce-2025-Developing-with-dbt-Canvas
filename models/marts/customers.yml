@@ -24,12 +24,6 @@ models:
         description: The sum of all the tax portion of every order a customer has placed.
       - name: lifetime_spend
         description: The sum of all the order totals (including tax) that a customer has ever placed.
-      - name: customer_type
-        description: Options are 'new' or 'returning', indicating if a customer has ordered more than once or has only placed their first order to date.
-        data_tests:
-          - accepted_values:
-              values: ["new", "returning"]
-
 semantic_models:
   - name: customers
     defaults:
@@ -43,8 +37,6 @@ semantic_models:
         type: primary
     dimensions:
       - name: customer_name
-        type: categorical
-      - name: customer_type
         type: categorical
       - name: first_ordered_at
         type: time
