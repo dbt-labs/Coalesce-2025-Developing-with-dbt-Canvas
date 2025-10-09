@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: ecom
-    schema: raw
-    database: canvas
+    schema: canvas
+    database: raw
     description: E-commerce data for the Jaffle Shop
     freshness:
       warn_after:
